@@ -16,6 +16,9 @@ class TempleView: UIView {
     struct Storyboard {
         static let borderWidth = CGFloat(5)
         static let borderColor = UIColor.white.cgColor
+        static let fontName = "Helvetica"
+        static let fontSize = CGFloat(9)
+        static let textRectHeightRatio = CGFloat(0.15)
     }
     
     // MARK: - Properties
@@ -54,12 +57,12 @@ class TempleView: UIView {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
         
-        let titleRectangle = CGRect(x: 0, y: bounds.height * 0.7, width: bounds.width, height: bounds.height * 0.15)
-        let attrs = [NSAttributedStringKey.font: UIFont(name: "Helvetica", size: 10)!, NSAttributedStringKey.paragraphStyle: paragraphStyle, NSAttributedStringKey.foregroundColor: UIColor.white]
+        let titleRectangle = CGRect(x: 0, y: bounds.height * (1.0 - 2 * Storyboard.textRectHeightRatio), width: bounds.width, height: bounds.height * Storyboard.textRectHeightRatio)
+        let attrs = [NSAttributedStringKey.font: UIFont(name: Storyboard.fontName, size: Storyboard.fontSize)!, NSAttributedStringKey.paragraphStyle: paragraphStyle, NSAttributedStringKey.foregroundColor: UIColor.white]
         
         temple?.templeName.draw(with: titleRectangle, options: .usesLineFragmentOrigin, attributes: attrs, context: nil)
         
-        let subtitleRectangle = CGRect(x: 0, y: bounds.height * 0.85, width: bounds.width, height: bounds.height * 0.15)
+        let subtitleRectangle = CGRect(x: 0, y: bounds.height * (1.0 - Storyboard.textRectHeightRatio), width: bounds.width, height: bounds.height * Storyboard.textRectHeightRatio)
         
         temple?.dedicatedDate.draw(with: subtitleRectangle, options: .usesLineFragmentOrigin, attributes: attrs, context: nil)
         

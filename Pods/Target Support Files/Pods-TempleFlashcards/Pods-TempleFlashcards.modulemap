@@ -1,0 +1,6 @@
+framework module Pods_TempleFlashcards {
+  umbrella header "Pods-TempleFlashcards-umbrella.h"
+
+  export *
+  module * { export * }
+}

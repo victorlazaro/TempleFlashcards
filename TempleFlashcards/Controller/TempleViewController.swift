@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class TempleViewController: UIViewController, UICollectionViewDelegateFlowLayout  {
     
@@ -140,15 +141,18 @@ class TempleViewController: UIViewController, UICollectionViewDelegateFlowLayout
             self.shuffledTemples?.remove(at: (selectedImageIndex?.row)!)
             self.tableView.deleteRows(at: [selectedNameIndex!], with: UITableViewRowAnimation.fade)
             self.collectionView.deleteItems(at: [selectedImageIndex!])
+            self.view.makeToast("Correct")
         }
         else {
             missCount += 1
+            self.view.makeToast("Incorrect")
         }
         updateCounts()
         selectedName = nil
         selectedImage = nil
         self.tableView.deselectRow(at: selectedNameIndex!, animated: false)
         self.collectionView.deselectItem(at: selectedImageIndex!, animated: false)
+        
     }
     
     private func isMatch() -> Bool {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C486427CF3C27EFEE91DFE6 /* Pods_TempleFlashcards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240493C8EA975742890098E6 /* Pods_TempleFlashcards.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CF2A4F821F8E74E500EDA874 /* TempleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A4F811F8E74E500EDA874 /* TempleViewController.swift */; };
 		CF2A4F851F8F048200EDA874 /* TempleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A4F841F8F048200EDA874 /* TempleView.swift */; };
 		CF512D961F8BC1F800D78C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF512D951F8BC1F800D78C7E /* AppDelegate.swift */; };
@@ -17,9 +18,12 @@
 		CF512DB21F8C26B300D78C7E /* Temple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF512DB11F8C26B300D78C7E /* Temple.swift */; };
 		CF7184551F8C4A91007E764E /* TempleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7184541F8C4A91007E764E /* TempleTableViewCell.swift */; };
 		CF7184571F8C520B007E764E /* TempleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7184561F8C520B007E764E /* TempleCollectionViewCell.swift */; };
+		CF9BB9C21F97B9CB002D8231 /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9BB9C31F97B9CB002D8231 /* Toast_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		169EA265EC2FBD29897E1C4D /* Pods-TempleFlashcards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempleFlashcards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TempleFlashcards/Pods-TempleFlashcards.debug.xcconfig"; sourceTree = "<group>"; };
+		240493C8EA975742890098E6 /* Pods_TempleFlashcards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempleFlashcards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A4F811F8E74E500EDA874 /* TempleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleViewController.swift; sourceTree = "<group>"; };
 		CF2A4F841F8F048200EDA874 /* TempleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleView.swift; sourceTree = "<group>"; };
 		CF512D921F8BC1F800D78C7E /* TempleFlashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempleFlashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +36,8 @@
 		CF512DB11F8C26B300D78C7E /* Temple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temple.swift; sourceTree = "<group>"; };
 		CF7184541F8C4A91007E764E /* TempleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleTableViewCell.swift; sourceTree = "<group>"; };
 		CF7184561F8C520B007E764E /* TempleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF9BB9C31F97B9CB002D8231 /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Toast_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EB5E5AD04E05BEF8BCF7D0 /* Pods-TempleFlashcards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempleFlashcards.release.xcconfig"; path = "Pods/Target Support Files/Pods-TempleFlashcards/Pods-TempleFlashcards.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +45,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9BB9C21F97B9CB002D8231 /* Toast_Swift.framework in Frameworks */,
+				3C486427CF3C27EFEE91DFE6 /* Pods_TempleFlashcards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64D1E909E09FDB534A3A803A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				169EA265EC2FBD29897E1C4D /* Pods-TempleFlashcards.debug.xcconfig */,
+				D9EB5E5AD04E05BEF8BCF7D0 /* Pods-TempleFlashcards.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4380A77A0E386133064EB67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF9BB9C31F97B9CB002D8231 /* Toast_Swift.framework */,
+				240493C8EA975742890098E6 /* Pods_TempleFlashcards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF512D891F8BC1F800D78C7E = {
 			isa = PBXGroup;
 			children = (
 				CF512D941F8BC1F800D78C7E /* TempleFlashcards */,
 				CF512D931F8BC1F800D78C7E /* Products */,
+				64D1E909E09FDB534A3A803A /* Pods */,
+				A4380A77A0E386133064EB67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF512DA41F8BC1F800D78C7E /* Build configuration list for PBXNativeTarget "TempleFlashcards" */;
 			buildPhases = (
+				BA43904CDA7ED062EDC0DCAB /* [CP] Check Pods Manifest.lock */,
 				CF512D8E1F8BC1F800D78C7E /* Sources */,
 				CF512D8F1F8BC1F800D78C7E /* Frameworks */,
 				CF512D901F8BC1F800D78C7E /* Resources */,
+				FA0075FC5B04E24C54652036 /* [CP] Embed Pods Frameworks */,
+				26139AD8E90184A1F9C5906C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +208,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26139AD8E90184A1F9C5906C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempleFlashcards/Pods-TempleFlashcards-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA43904CDA7ED062EDC0DCAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempleFlashcards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA0075FC5B04E24C54652036 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TempleFlashcards/Pods-TempleFlashcards-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempleFlashcards/Pods-TempleFlashcards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF512D8E1F8BC1F800D78C7E /* Sources */ = {
@@ -324,6 +409,7 @@
 		};
 		CF512DA51F8BC1F800D78C7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 169EA265EC2FBD29897E1C4D /* Pods-TempleFlashcards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +425,7 @@
 		};
 		CF512DA61F8BC1F800D78C7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EB5E5AD04E05BEF8BCF7D0 /* Pods-TempleFlashcards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
