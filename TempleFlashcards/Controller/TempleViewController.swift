@@ -23,6 +23,11 @@ class TempleViewController: UIViewController, UICollectionViewDelegateFlowLayout
         static let matchButtonTitle = "Match"
     }
     
+    struct Constants {
+        static let correct = "Correct"
+        static let incorrect = "Incorrect"
+    }
+    
     
     // MARK: - Properties
     
@@ -141,11 +146,11 @@ class TempleViewController: UIViewController, UICollectionViewDelegateFlowLayout
             self.shuffledTemples?.remove(at: (selectedImageIndex?.row)!)
             self.tableView.deleteRows(at: [selectedNameIndex!], with: UITableViewRowAnimation.fade)
             self.collectionView.deleteItems(at: [selectedImageIndex!])
-            self.view.makeToast("Correct")
+            self.view.makeToast(Constants.correct)
         }
         else {
             missCount += 1
-            self.view.makeToast("Incorrect")
+            self.view.makeToast(Constants.incorrect)
         }
         updateCounts()
         selectedName = nil
