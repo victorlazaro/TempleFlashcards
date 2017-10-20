@@ -10,6 +10,11 @@ import Foundation
 
 class TempleData {
     
+    
+    // MARK: - Singleton
+    
+    private init() {}
+    
     static let sharedInstance = TempleData()
     
     let temples = [
@@ -56,7 +61,6 @@ class TempleData {
                    Temple(filename: "mexico-city-temple-lds-591669-mobile.jpg", name: "Mexico City Mexico", dedicatedDate: "Dec. 2, 1983")
     ]
     
-    private init() {}
     
     public func shuffle() -> [Temple] {
         var copy = temples

@@ -22,10 +22,13 @@ class TempleView: UIView {
     }
     
     // MARK: - Properties
+    
     @IBInspectable var templeName: String = ""
     @IBInspectable var dedicationDate: String = ""
     var temple: Temple?
 
+    
+    // MARK: - Draw
 
     override func draw(_ rect: CGRect) {
         

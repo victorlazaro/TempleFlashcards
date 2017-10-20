@@ -194,12 +194,15 @@ extension TempleViewController : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if (selectedImageIndex != nil) {
+        if selectedImageIndex != nil && TempleViewController.isMatching {
             let previousCell = collectionView.cellForItem(at: selectedImageIndex!) as? TempleCollectionViewCell
             previousCell?.templeView.layer.borderColor = UIColor.white.cgColor
         }
         let cell = collectionView.cellForItem(at: indexPath) as! TempleCollectionViewCell
+        
+        if TempleViewController.isMatching {
         cell.templeView.layer.borderColor = UIColor.gray.cgColor
+        }
         
         selectedImage = self.shuffledTemples?[indexPath.row]
         
